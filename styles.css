@@ -1,0 +1,26 @@
+
+
+.row {
+    margin: 2px;
+    padding: 5px;
+    border-color: red;
+    background-color: blueviolet;
+}
+
+.col {
+    margin: 2px;
+    padding: 5px;
+    border-color: blue;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: rgb(7, 154, 154);
+  }
