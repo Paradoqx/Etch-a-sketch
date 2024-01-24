@@ -1,26 +1,18 @@
-
-
-.row {
-    margin: 2px;
-    padding: 5px;
-    border-color: red;
-    background-color: blueviolet;
-}
-
-.col {
-    margin: 2px;
-    padding: 5px;
-    border-color: blue;
-    background-color: black;
-}
-
-body {
+#container {
     display: flex;
-    flex-direction: column; /* Change from row to column */
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-wrap: wrap;
     scroll-behavior: smooth;
-    background-color: rgb(7, 154, 154);
+    background-color: aqua;
+    height: 512px;
+    width: 512px;
+  }
+
+  .square {
+    background-color: rgb(43, 226, 119);
+
+    height: 8px;
+    width: 8px;
   }

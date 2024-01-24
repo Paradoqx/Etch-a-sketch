@@ -1,27 +1,23 @@
 var grid = document.getElementById("container")
 
-var rows = 16;
-
-var cols = 16;
+var squareNum = 4096;
 
 var container = document.getElementById("container")
 
-for (i=0; i < rows; i++) {
+for (i=0; i < squareNum; i++) {
 
-    var row = document.createElement("div")
-    row.className = "row" 
-    container.appendChild(row)
+    var square = document.createElement("div")
+    square.className = "square"
+    container.appendChild(square)
+    console.log("chili")
 }
 
-for (j=0; j < cols; i++) {
+var squares = document.getElementsByClassName("square");
 
-        var col =document.createElement("div")
-        col.className = "col"
-        container.appendChild(col) 
+// Loop through the squares
+for (var i = 0; i < squares.length; i++) {
+  // Change the background color to black on mouseover
+  squares[i].addEventListener("mouseover", function() {
+    this.style.backgroundColor = "black";
+  })
 }
-
-
-container.appendChild(row);
-container.appendChild(col);
-
-console.log("chipachapa")
